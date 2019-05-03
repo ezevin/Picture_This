@@ -26,11 +26,7 @@ class Api::V1::GamesController < ApplicationController
     #   # tiles times create new tile tile.game+_id = game id
     render json: user
   end
-
-  def board
-  # #of tiles  = (level + 1) ^2
-  end
-
+  
   # def complete_level
   #   # matrix = Matrix.build(2, 2) {|row, col| col - row }
   #   finished_level = Game.find_by(level_completed: true)
