@@ -13,6 +13,7 @@ class Api::V1::GamesController < ApplicationController
   end
 
   def create
+
     game = Game.create(gameparams)
     # # create tiles
     num_rows = gameparams[:level] + 1
