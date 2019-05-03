@@ -7,7 +7,10 @@
 /************************************************/
 //        All Variables and Data                //
 /************************************************/
-const numbers =[1, 2, 3, 4] //not actual data//
+//fetch
+// populate array
+//array.push({})
+const numbers =[1, 2, 3] //not actual data//
 const gameBoard = document.getElementById("game_board")
 
 //************************************************/
@@ -15,12 +18,17 @@ const gameBoard = document.getElementById("game_board")
 /************************************************/
 
 //////////////Iterate Over All Tiles/////////////
-
+function swap() {
+  numbers.forEach(num => {
+    tiles = document.querySelector(".tiles")
+    table = document.create
+    tiles.innerHTML += `<span data-id="number_id"${num} class="card">${num}</span>`
+  })
+  tiles.innerHTML += `<span class="card empty"></span>`
+}
+swap();
 // *needs to be made dynamic *
-numbers.forEach(num => {
-  tiles = document.querySelector(".tiles")
-  tiles.innerHTML += `<span data-id="number_id"${num} class="card">${num}</span>`
-})
+
 
 ////////////////Create A Keydown Event///////////
 document.addEventListener("keydown", function(e){

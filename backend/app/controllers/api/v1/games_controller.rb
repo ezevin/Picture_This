@@ -12,6 +12,10 @@ class Api::V1::GamesController < ApplicationController
     game = Game.new
   end
 
+
+# subtract 1 for missing tile #
+
+
   def create
     def create
       game = Game.create(gameparams)
