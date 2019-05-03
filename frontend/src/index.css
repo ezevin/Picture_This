@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap;
+  justify-content: center
+}
+.tiles {
+  width: calc(33%-10px)
+}
