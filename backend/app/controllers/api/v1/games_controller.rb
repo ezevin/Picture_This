@@ -17,22 +17,21 @@ class Api::V1::GamesController < ApplicationController
 
 
   def create
-    def create
-      game = Game.create(gameparams)
-      # # create tiles
-      num_rows = gameparams[:level] + 1
-      num_tiles = num_rows ** 2
-      # color will match the amount of tiles per row
-      # i.e. if there are 4 tiles in a row there are 4 blue tiles
-      num_tiles.times do |int|
-        Tile.create(game_id: game.id, tile: int, color: 'blue')
-      end
 
-      #   # each with index for tile int
-      #   # tiles times create new tile tile.game+_id = game id
-      render json: user
+    game = Game.create(gameparams)
+    # # create tiles
+    num_rows = gameparams[:level] + 1
+    num_tiles = num_rows ** 2
+    # color will match the amount of tiles per row
+    # i.e. if there are 4 tiles in a row there are 4 blue tiles
+    num_tiles.times do |int|
+      Tile.create(game_id: game.id, tile: int, color: 'blue')
     end
-
+    #   # each with index for tile int
+    #   # tiles times create new tile tile.game+_id = game id
+    render json: user
+  end
+  
   # def complete_level
   #   # matrix = Matrix.build(2, 2) {|row, col| col - row }
   #   finished_level = Game.find_by(level_completed: true)

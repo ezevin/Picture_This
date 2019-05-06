@@ -13,7 +13,6 @@ game1 = Game.create(score: 0, user_id: user1.id, level: 1)
 # game2 = Game.create(score: 10, user_id: user1.id, level: 1, level_completed: false)
 # game3 = Game.create(score: 20, user_id: user2.id, level: 1, level_completed: false)
 # game4 = Game.create(score: 30, user_id: user2.id, level: 1, level_completed: false)
-#
 
 tile1 = Tile.create(game_id: game1.id, tile: 1, color: "blue")
 tile2 = Tile.create(game_id: game1.id, tile: 2, color: "blue")

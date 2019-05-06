@@ -83,8 +83,3 @@ production:
   database: Picture_This_production
   username: Picture_This
   password: <%= ENV['PICTURE_THIS_DATABASE_PASSWORD'] %>
-
-development:
-    adapter: postgresql
-    database: [YOUR_DATABASE_NAME]
-    host: localhost
