@@ -8,7 +8,7 @@
 <<<<<<< HEAD
 =======
 
->>>>>>> 4c1eb80eb07050eb2b69a82af7bdd542ad970e10
+>>>>>>> c67cd0b60ec0b04bb26a5accc2d3165ae61e0fd1
 user1 = User.create(name: "vera", score: 0);
 user2 = User.create(name: "powerful", score: 0);
 
@@ -18,8 +18,7 @@ game1 = Game.create(score: 0, user_id: user1.id, level: 1)
 # game4 = Game.create(score: 30, user_id: user2.id, level: 1, level_completed: false)
 <<<<<<< HEAD
 =======
-#
->>>>>>> 4c1eb80eb07050eb2b69a82af7bdd542ad970e10
+>>>>>>> c67cd0b60ec0b04bb26a5accc2d3165ae61e0fd1
 
 tile1 = Tile.create(game_id: game1.id, tile: 1, color: "blue")
 tile2 = Tile.create(game_id: game1.id, tile: 2, color: "blue")
