@@ -1,0 +1,60 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.card{
+  /* width: calc(33%-10px);
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 20px; */
+
+background: blue;
+ padding: 5px;
+ width: 200px;
+ height: 150px;
+ margin-top: 10px;
+
+ line-height: 150px;
+ color: white;
+ font-weight: bold;
+ font-size: 3em;
+ text-align: center;
+}
+
+.card.empty {
+  background-color: pink;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* .tiles {
+  width: calc(33%-10px);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+} */
+
+.tile1, .tile2, .tile3, .tile4, .tile5, .tile6, .tile7, .tile8, .tile9 {
+  display: table-cell;
+  width: 120px;
+  height: 120px;
+  border: 1px solid white;
+  background: url(https://www.101computing.net/wp/wp-content/uploads/flower.png);
+  cursor: pointer;
+}
+
+.tile1 {background-position: left top;}
+.tile2 {background-position: center top;}
+.tile3 {background-position: right top;}
+.tile4 {background-position: left center;}
+.tile5 {background-position: center center;}
+.tile6 {background-position: right center;}
+.tile7 {background-position: left bottom;}
+.tile8 {background-position: center bottom;}
+.tile9 {background: white; cursor: default;}
