@@ -5,6 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4c1eb80eb07050eb2b69a82af7bdd542ad970e10
 user1 = User.create(name: "vera", score: 0);
 user2 = User.create(name: "powerful", score: 0);
 
@@ -12,6 +16,10 @@ game1 = Game.create(score: 0, user_id: user1.id, level: 1)
 # game2 = Game.create(score: 10, user_id: user1.id, level: 1, level_completed: false)
 # game3 = Game.create(score: 20, user_id: user2.id, level: 1, level_completed: false)
 # game4 = Game.create(score: 30, user_id: user2.id, level: 1, level_completed: false)
+<<<<<<< HEAD
+=======
+#
+>>>>>>> 4c1eb80eb07050eb2b69a82af7bdd542ad970e10
 
 tile1 = Tile.create(game_id: game1.id, tile: 1, color: "blue")
 tile2 = Tile.create(game_id: game1.id, tile: 2, color: "blue")

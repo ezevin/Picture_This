@@ -10,7 +10,7 @@
   margin-right: 10px;
   margin-bottom: 20px; */
 
-  background: blue;
+background: blue;
  padding: 5px;
  width: 200px;
  height: 150px;
@@ -21,6 +21,10 @@
  font-weight: bold;
  font-size: 3em;
  text-align: center;
+}
+
+.card.empty {
+  background-color: pink;
 }
 .container {
   display: flex;
